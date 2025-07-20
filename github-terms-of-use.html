@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - Bible Word Study</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 60px;
+            margin: 20px 0;
+        }
+        
+        h1 {
+            color: #1a202c;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .app-subtitle {
+            text-align: center;
+            color: #718096;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        
+        h2 {
+            color: #2d3748;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            padding: 15px 0 15px 20px;
+            border-left: 4px solid #667eea;
+            background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, rgba(102, 126, 234, 0.02) 100%);
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .last-updated {
+            text-align: center;
+            font-style: italic;
+            color: #a0aec0;
+            font-size: 0.95rem;
+            margin-bottom: 50px;
+            padding: 12px 24px;
+            background: #f7fafc;
+            border-radius: 25px;
+            border: 1px solid #e2e8f0;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        
+        p {
+            margin: 20px 0;
+            font-size: 1rem;
+            color: #4a5568;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 0;
+        }
+        
+        li {
+            margin: 12px 0;
+            padding: 12px 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 3px solid #e2e8f0;
+            list-style: none;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        li:hover {
+            background: #edf2f7;
+            border-left-color: #667eea;
+            transform: translateX(5px);
+        }
+        
+        li::before {
+            content: "✓";
+            color: #48bb78;
+            font-weight: bold;
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            border: 2px solid #48bb78;
+        }
+        
+        strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .subscription-info {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+        }
+        
+        .subscription-info h2 {
+            color: white;
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-size: 1.5rem;
+        }
+        
+        .subscription-info p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .subscription-info strong {
+            color: white;
+        }
+        
+        .subscription-info ul {
+            margin: 15px 0;
+        }
+        
+        .subscription-info li {
+            background: rgba(255, 255, 255, 0.15);
+            border-left: 3px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .subscription-info li:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-left-color: white;
+        }
+        
+        .subscription-info li::before {
+            color: #00f2fe;
+            background: white;
+            border-color: white;
+        }
+        
+        .contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0 20px 0;
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .contact h2 {
+            color: white;
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-size: 1.5rem;
+        }
+        
+        .contact p {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 10px 0;
+        }
+        
+        .contact strong {
+            color: white;
+        }
+        
+        .section-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 5px solid #e53e3e;
+            box-shadow: 0 5px 15px rgba(229, 62, 62, 0.2);
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 5px solid #38b2ac;
+            box-shadow: 0 5px 15px rgba(56, 178, 172, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .container {
+                padding: 30px 25px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+                padding: 12px 0 12px 15px;
+            }
+            
+            li {
+                padding: 10px 15px;
+            }
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Add subtle animation on load */
+        .container {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms of Use</h1>
+        <div class="app-subtitle">Bible Word Study Mobile Application</div>
+        
+        <div class="last-updated">Last updated: January 2025</div>
+        
+        <h2><span class="section-number">1</span>Acceptance of Terms</h2>
+        <p>By downloading, installing, or using the Bible Word Study mobile application ("App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+        
+        <h2><span class="section-number">2</span>Description of Service</h2>
+        <p>Bible Word Study is a mobile application that provides biblical word studies, including original Hebrew and Greek text analysis, theological insights, and spiritual guidance. The App offers both free and premium subscription features.</p>
+        
+        <div class="subscription-info">
+            <h2><span class="section-number">3</span>Subscription Services</h2>
+            <p><strong>Auto-Renewable Subscriptions Available:</strong></p>
+            <ul>
+                <li><strong>Weekly Premium Access:</strong> $2.99 per week</li>
+                <li><strong>Monthly Premium Access:</strong> $7.99 per month</li>
+            </ul>
+            
+            <p><strong>Subscription Terms:</strong></p>
+            <ul>
+                <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period</li>
+                <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+                <li>You can manage and cancel subscriptions in your Apple ID account settings</li>
+                <li>No cancellation of the current subscription is allowed during the active subscription period</li>
+                <li>Any unused portion of a free trial period will be forfeited when you purchase a subscription</li>
+            </ul>
+            
+            <p><strong>Premium Features Include:</strong></p>
+            <ul>
+                <li>Unlimited biblical word studies</li>
+                <li>Access to original Hebrew & Greek texts</li>
+                <li>Comprehensive theological commentary</li>
+                <li>Advanced study tools and insights</li>
+                <li>Ad-free experience</li>
+            </ul>
+        </div>
+        
+        <h2><span class="section-number">4</span>Payment and Billing</h2>
+        <p>All payments are processed through Apple's App Store. Subscription fees are charged to your Apple ID account. Prices may vary by location and are subject to change with notice.</p>
+        
+        <h2><span class="section-number">5</span>Free Trial</h2>
+        <p>We may offer free trials for premium features. Trial periods and terms may vary. If you do not cancel before the trial ends, you will be charged the applicable subscription fee.</p>
+        
+        <div class="warning-box">
+            <h2><span class="section-number">6</span>User Conduct</h2>
+            <p>You agree to use the App only for lawful purposes and in accordance with these Terms. You may not:</p>
+            <ul>
+                <li>Use the App for any illegal or unauthorized purpose</li>
+                <li>Attempt to reverse engineer or modify the App</li>
+                <li>Share your account credentials with others</li>
+                <li>Use automated systems to access the App</li>
+            </ul>
+        </div>
+        
+        <h2><span class="section-number">7</span>Content and Intellectual Property</h2>
+        <p>All content in the App, including biblical studies, commentary, and original analysis, is protected by copyright and other intellectual property laws. You may use the content for personal, non-commercial purposes only.</p>
+        
+        <h2><span class="section-number">8</span>Disclaimer of Warranties</h2>
+        <p>The App is provided "as is" without warranties of any kind. While we strive for accuracy in our biblical content, we make no guarantees about the completeness or accuracy of theological interpretations.</p>
+        
+        <h2><span class="section-number">9</span>Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App.</p>
+        
+        <h2><span class="section-number">10</span>Privacy</h2>
+        <p>Your privacy is important to us. Please review our Privacy Policy to understand how we collect and use your information.</p>
+        
+        <h2><span class="section-number">11</span>Changes to Terms</h2>
+        <p>We may update these Terms from time to time. We will notify you of any material changes by posting the new Terms in the App. Your continued use of the App after changes constitutes acceptance of the new Terms.</p>
+        
+        <h2><span class="section-number">12</span>Termination</h2>
+        <p>We may terminate or suspend your access to the App at any time for violation of these Terms. Upon termination, your right to use the App will cease immediately.</p>
+        
+        <h2><span class="section-number">13</span>Governing Law</h2>
+        <p>These Terms are governed by the laws of the United States. Any disputes will be resolved in the appropriate courts.</p>
+        
+        <div class="info-box">
+            <h2><span class="section-number">14</span>Apple App Store Terms</h2>
+            <p>If you downloaded the App from the Apple App Store, you acknowledge and agree that:</p>
+            <ul>
+                <li>These Terms are between you and JCBSN Brand, not Apple</li>
+                <li>Apple is not responsible for the App or its content</li>
+                <li>Apple has no obligation to provide support for the App</li>
+                <li>Apple is a third-party beneficiary of these Terms</li>
+            </ul>
+        </div>
+        
+        <div class="contact">
+            <h2><span class="section-number">15</span>Contact Information</h2>
+            <p>If you have any questions about these Terms of Use, please contact us at:</p>
+            <p><strong>Email:</strong> founder@thejcbsnbrand.com</p>
+            <p><strong>App:</strong> Bible Word Study</p>
+            <p><strong>Developer:</strong> JCBSN Brand</p>
+        </div>
+    </div>
+</body>
+</html> 
