@@ -11,224 +11,175 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
             line-height: 1.7;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #1a1a1a;
+            background: #fafafa;
             min-height: 100vh;
         }
         
         .container {
             background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            padding: 60px;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 48px;
             margin: 20px 0;
         }
         
         h1 {
-            color: #1a202c;
-            font-size: 2.5rem;
+            color: #000;
+            font-size: 2.2rem;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            margin-bottom: 8px;
+            font-family: Georgia, 'Times New Roman', serif;
         }
         
         .app-subtitle {
             text-align: center;
-            color: #718096;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            font-weight: 500;
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 32px;
+            font-weight: 400;
         }
         
         h2 {
-            color: #2d3748;
-            font-size: 1.4rem;
+            color: #000;
+            font-size: 1.2rem;
             font-weight: 600;
-            margin: 40px 0 20px 0;
-            padding: 15px 0 15px 20px;
-            border-left: 4px solid #667eea;
-            background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, rgba(102, 126, 234, 0.02) 100%);
-            border-radius: 0 8px 8px 0;
+            margin: 36px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
         }
         
         .last-updated {
             text-align: center;
-            font-style: italic;
-            color: #a0aec0;
-            font-size: 0.95rem;
-            margin-bottom: 50px;
-            padding: 12px 24px;
-            background: #f7fafc;
-            border-radius: 25px;
-            border: 1px solid #e2e8f0;
-            display: inline-block;
-            width: 100%;
-            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
         }
         
         p {
-            margin: 20px 0;
+            margin: 16px 0;
             font-size: 1rem;
-            color: #4a5568;
+            color: #444;
         }
         
         ul {
-            margin: 20px 0;
+            margin: 16px 0;
             padding-left: 0;
+            list-style: none;
         }
         
         li {
-            margin: 12px 0;
-            padding: 12px 20px;
-            background: #f8fafc;
-            border-radius: 8px;
-            border-left: 3px solid #e2e8f0;
-            list-style: none;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-        
-        li:hover {
-            background: #edf2f7;
-            border-left-color: #667eea;
-            transform: translateX(5px);
-        }
-        
-        li::before {
-            content: "✓";
-            color: #48bb78;
-            font-weight: bold;
-            position: absolute;
-            left: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            border: 2px solid #48bb78;
+            margin: 10px 0;
+            padding: 12px 16px;
+            background: #f8f8f8;
+            border-radius: 12px;
+            border-left: 3px solid #ddd;
+            font-size: 0.95rem;
+            color: #444;
         }
         
         strong {
-            color: #2d3748;
+            color: #000;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: #f5f5f5;
+            padding: 24px;
+            border-radius: 16px;
+            margin: 24px 0;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .highlight-box h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 12px;
+        }
+        
+        .highlight-box a {
+            color: #000;
             font-weight: 600;
         }
         
         .contact {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #000;
             color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 40px 0 20px 0;
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            padding: 28px;
+            border-radius: 16px;
+            margin: 40px 0 0 0;
         }
         
         .contact h2 {
             color: white;
-            background: none;
-            border: none;
-            padding: 0;
-            margin: 0 0 20px 0;
-            font-size: 1.5rem;
+            margin: 0 0 16px 0;
+            border-bottom: none;
+            font-size: 1.1rem;
         }
         
         .contact p {
-            color: rgba(255, 255, 255, 0.9);
-            margin: 10px 0;
+            color: rgba(255, 255, 255, 0.85);
+            margin: 8px 0;
+            font-size: 0.95rem;
         }
         
         .contact strong {
             color: white;
         }
         
-        .section-number {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-right: 15px;
+        a {
+            color: #666;
         }
         
-        .highlight-box {
-            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
-            padding: 25px;
-            border-radius: 12px;
-            margin: 25px 0;
-            border-left: 5px solid #e17055;
-            box-shadow: 0 5px 15px rgba(225, 112, 85, 0.2);
+        a:hover {
+            color: #000;
         }
         
         @media (max-width: 768px) {
             body {
-                padding: 20px 15px;
+                padding: 16px;
             }
             
             .container {
-                padding: 30px 25px;
+                padding: 28px 24px;
+                border-radius: 20px;
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             h2 {
-                font-size: 1.2rem;
-                padding: 12px 0 12px 15px;
+                font-size: 1.1rem;
             }
             
             li {
-                padding: 10px 15px;
+                padding: 10px 14px;
             }
         }
         
-        /* Smooth scroll behavior */
         html {
             scroll-behavior: smooth;
-        }
-        
-        /* Add subtle animation on load */
-        .container {
-            animation: fadeInUp 0.6s ease-out;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <div class="app-subtitle">Bible Word Study Mobile Application</div>
+        <div class="app-subtitle">Bible Word Study</div>
         
         <div class="last-updated">Last updated: January 2025</div>
         
-        <h2><span class="section-number">1</span>Information We Collect</h2>
+        <h2>Information We Collect</h2>
         <p>Bible Word Study is designed to protect your privacy. We collect minimal information necessary to provide our service:</p>
         <ul>
             <li><strong>Account Information:</strong> When you subscribe to premium features, we collect your Apple ID information through Apple's In-App Purchase system.</li>
@@ -236,59 +187,87 @@
             <li><strong>Device Information:</strong> Basic device information for app functionality and crash reporting.</li>
         </ul>
         
-        <h2><span class="section-number">2</span>How We Use Your Information</h2>
+        <div class="highlight-box">
+            <h2>Data Stored on Your Device</h2>
+            <p>Most of your data is stored <strong>locally on your device</strong> and never leaves it:</p>
+            <ul>
+                <li><strong>Saved Words:</strong> Words you bookmark for later reference</li>
+                <li><strong>Personal Notes:</strong> Comments and notes you write on word studies</li>
+                <li><strong>Highlighted Verses:</strong> Bible verses you highlight or save</li>
+                <li><strong>Verse Comments:</strong> Notes you add to Bible verses</li>
+                <li><strong>Search History:</strong> Your recent word searches</li>
+                <li><strong>App Preferences:</strong> Your settings and preferences</li>
+            </ul>
+            <p>This data stays on your device and is not uploaded to any server.</p>
+        </div>
+        
+        <h2>How We Use Your Information</h2>
         <p>We use collected information to:</p>
         <ul>
             <li>Provide and maintain our Bible study services</li>
             <li>Process subscription payments through Apple's system</li>
+            <li>Generate AI-powered word studies based on your searches</li>
             <li>Improve app functionality and user experience</li>
             <li>Send important service notifications</li>
         </ul>
         
-        <h2><span class="section-number">3</span>Data Sharing</h2>
+        <h2>Data Sharing</h2>
         <p>We do not sell, trade, or share your personal information with third parties, except:</p>
         <ul>
-            <li><strong>Apple Inc.:</strong> Subscription and payment processing</li>
+            <li><strong>Apple Inc.:</strong> Subscription and payment processing through the App Store</li>
+            <li><strong>RevenueCat:</strong> Subscription management and analytics</li>
             <li><strong>Legal Requirements:</strong> When required by law</li>
         </ul>
         
-        <h2><span class="section-number">4</span>Data Security</h2>
-        <p>We implement appropriate security measures to protect your information. All subscription data is handled securely through Apple's In-App Purchase system.</p>
+        <div class="highlight-box">
+            <h2>AI-Powered Features & OpenAI</h2>
+            <p>Our app uses artificial intelligence to generate word studies. When you search for a word:</p>
+            <ul>
+                <li><strong>Your search query</strong> is sent to OpenAI's API to generate the word study content</li>
+                <li>OpenAI processes the request and returns the study results</li>
+                <li>We do not send any personal information beyond the search term itself</li>
+            </ul>
+            <p>Please review <a href="https://openai.com/privacy">OpenAI's Privacy Policy</a> for details on how they handle data.</p>
+        </div>
         
-        <h2><span class="section-number">5</span>Your Rights</h2>
-        <p>You have the right to:</p>
+        <h2>Data Security</h2>
+        <p>We implement appropriate security measures to protect your information:</p>
         <ul>
-            <li>Access your personal information</li>
-            <li>Request deletion of your data</li>
-            <li>Cancel subscriptions through your Apple ID settings</li>
+            <li>All subscription data is handled securely through Apple's In-App Purchase system</li>
+            <li>Local data is stored securely on your device using iOS security features</li>
+            <li>API communications use encrypted HTTPS connections</li>
         </ul>
         
-        <h2><span class="section-number">6</span>Children's Privacy</h2>
-        <p>Our app is suitable for all ages. We do not knowingly collect personal information from children under 13.</p>
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal information stored in the app</li>
+            <li>Delete your saved words, notes, and search history at any time</li>
+            <li>Cancel subscriptions through your Apple ID settings</li>
+            <li>Choose not to use AI-powered features</li>
+        </ul>
         
-        <h2><span class="section-number">7</span>Third-Party Services</h2>
-        <p>Our app uses Apple's In-App Purchase system for subscriptions. Please refer to Apple's Privacy Policy for information about their data practices.</p>
+        <h2>Children's Privacy</h2>
+        <p>Our app is suitable for all ages and contains biblical educational content. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us immediately.</p>
         
-        <h2><span class="section-number">8</span>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. We will notify users of any changes by posting the new policy on this page.</p>
+        <h2>Third-Party Services</h2>
+        <p>Our app integrates with the following third-party services:</p>
+        <ul>
+            <li><strong>Apple App Store:</strong> Payment processing and subscriptions</li>
+            <li><strong>RevenueCat:</strong> Subscription management</li>
+            <li><strong>OpenAI:</strong> AI-powered word study generation</li>
+        </ul>
+        <p>Please review each service's privacy policy for information about their data practices.</p>
         
-        <div class="highlight-box">
-            <h2><span class="section-number">9</span>In-App Purchases</h2>
-            <p>Our app offers the following subscriptions:</p>
-            <ul>
-                <li><strong>Weekly Premium:</strong> $2.99/week</li>
-                <li><strong>Monthly Premium:</strong> $7.99/month</li>
-            </ul>
-            <p>All subscription management is handled through Apple's system. You can cancel anytime in your Apple ID settings.</p>
-        </div>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. We will notify users of any material changes by posting the new policy on this page and updating the "Last updated" date.</p>
         
         <div class="contact">
             <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
             <p><strong>Email:</strong> founder@thejcbsnbrand.com</p>
-            <p><strong>App:</strong> Bible Word Study</p>
             <p><strong>Developer:</strong> JCBSN Brand</p>
         </div>
     </div>
 </body>
-</html> 
+</html>
